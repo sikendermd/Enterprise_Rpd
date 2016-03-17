@@ -1,0 +1,31 @@
+<!--
+
+    THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS
+    FOR A PARTICULAR PURPOSE. THIS CODE AND INFORMATION ARE NOT SUPPORTED BY XEBIALABS.
+
+-->
+<synthetic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns="http://www.xebialabs.com/deployit/synthetic"
+           xsi:schemaLocation="http://www.xebialabs.com/deployit/synthetic synthetic.xsd">
+
+	<type type="powercenter.Container" extends="udm.BaseContainer">
+		<property name="host" kind="ci" referenced-type="overthere.Host" as-containment="true" />
+		<property name="home" kind="string" required="true" description="Location where pmrep can be found. /server/bin/pmrep will be appended." />
+		<property name="repository" kind="string" required="true" description="Powercenter repository." />
+		<property name="domain" kind="string" required="true" description="Powercenter domain." />
+		<property name="username" kind="string" required="true" description="Powercenter username." />
+		<property name="password" kind="string" required="true" password="true" description="Powercenter password." />
+	</type>
+
+
+
+	<type type="powercenter.xml" extends="udm.BaseDeployedArtifact"
+	      deployable-type="powercenter.XmlSpec"
+	      container-type="powercenter.Container"
+	      description="Deployed xml to a powercenter container">
+		<generate-deployable type="powercenter.XmlSpec" extends="udm.BaseDeployableFileArtifact"/>
+		<property name="targetPath" kind="string" required="true" description="Output targetpath" />
+	</type>
+
+</synthetic>
