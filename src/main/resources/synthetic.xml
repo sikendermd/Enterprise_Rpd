@@ -20,8 +20,8 @@
 
 
 
-	<type type="powercenter.xml" extends="udm.BaseDeployedArtifact"
-	      deployable-type="powercenter.XmlSpec"
+	<type type="powercenter.XML" extends="udm.BaseDeployedArtifact"
+	      deployable-type="powercenter.XMLSpec"
 	      container-type="powercenter.Container"
 	      description="Deployed xml to a powercenter container">
 		<generate-deployable type="powercenter.XmlSpec" extends="udm.BaseDeployableFileArtifact"/>
