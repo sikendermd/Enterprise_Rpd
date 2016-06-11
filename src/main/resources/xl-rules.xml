@@ -10,7 +10,7 @@
 
     <rule name="powercenter.Xml.CREATE" scope="deployed">
         <conditions>
-            <type>powercenter.XML</type>
+            <type>powercenter.Xml</type>
             <operation>CREATE</operation>
         </conditions>
         <steps>
