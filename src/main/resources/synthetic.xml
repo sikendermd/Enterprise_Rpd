@@ -21,10 +21,10 @@
 
 
 	<type type="powercenter.XML" extends="udm.BaseDeployedArtifact"
-	      deployable-type="powercenter.Xml"
+	      deployable-type="powercenter.XmlSpec"
 	      container-type="powercenter.Container"
 	      description="Deployed xml to a powercenter container">
-		<generate-deployable type="powercenter.Xml" extends="udm.BaseDeployableFileArtifact"/>
+		<generate-deployable type="powercenter.XmlSpec" extends="udm.BaseDeployableFileArtifact"/>
 		<property name="targetPath" kind="string" required="true" description="Output targetpath" />
 	</type>
 
