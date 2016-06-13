@@ -13,5 +13,8 @@ ${exitCodeCheck}
 
 echo ------------------------------------------------------------------------
 
-${pmrep} objectimport -i ${deployed.file} -c ${deployed.targetPath}/import_Infa_Objects_Control.txt -p > ${depoyed.targetPath}/import.Infa_objects.log.txt
+#${pmrep} objectimport -i ${deployed.file} -c ${deployed.targetPath}/import_Infa_Objects_Control.txt -p > ${depoyed.targetPath}/import.Infa_objects.log.txt
+
+${pmrep} objectimport -f CUSTOM_SDE_SBL_Vert_811_Adaptor -n ${deployed.file} -o workflow -u /tmp/abc/${deployed.file}
+
 ${exitCodeCheck}
