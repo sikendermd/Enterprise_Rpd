@@ -27,6 +27,7 @@
 		<generate-deployable type="powercenter.XmlSpec" extends="udm.BaseDeployableFileArtifact"/>
 		<property name="targetPath" kind="string" required="true" description="Output targetpath" />
 		<property name="foldername" kind="string" required="true" description="folder name" />
+		<property name="filename" kind="string" required="true" description="file name" />
 	</type>
 
 </synthetic>
