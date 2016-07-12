@@ -8,15 +8,15 @@
 <rules xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns="http://www.xebialabs.com/xl-deploy/xl-rules" >
 
-    <rule name="powercenter.Xml.CREATE" scope="deployed">
+    <rule name="obiee.Rpd.CREATE" scope="deployed">
         <conditions>
-            <type>powercenter.XML</type>
+            <type>OBIEE.RPD</type>
             <operation>CREATE</operation>
         </conditions>
         <steps>
             <os-script>
-                <description>Install powercenter xml</description>
-                <script>powercenter/powercenter_install</script>
+                <description>Install OBIEE Rpd</description>
+                <script>obiee/rpd_install</script>
                 <order>60</order>
             </os-script>
         </steps>
