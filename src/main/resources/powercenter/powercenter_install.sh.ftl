@@ -8,7 +8,7 @@ if [ $res != 0 ] ; then
   exit $res
 fi
 </#assign>
-${pmrep} connect -r ${deployed.container.repository} -d ${deployed.container.domain} -n ${deployed.container.username} -x ${deployed.container.password}
+${nqudmlgen} connect -r ${deployed.container.repository} -d ${deployed.container.domain} -n ${deployed.container.username} -x ${deployed.container.password}
 ${exitCodeCheck}
 
 echo ------------------------------------------------------------------------
