@@ -9,25 +9,31 @@
            xmlns="http://www.xebialabs.com/deployit/synthetic"
            xsi:schemaLocation="http://www.xebialabs.com/deployit/synthetic synthetic.xsd">
 
-	<type type="powercenter.Container" extends="udm.BaseContainer">
+	<type type="obieerpd.Container" extends="udm.BaseContainer">
 		<property name="host" kind="ci" referenced-type="overthere.Host" as-containment="true" />
-		<property name="home" kind="string" required="true" description="Location where pmrep can be found. /server/bin/pmrep will be appended." />
-		<property name="repository" kind="string" required="true" description="Powercenter repository." />
-		<property name="domain" kind="string" required="true" description="Powercenter domain." />
+		<property name="home" kind="string" required="true" description="Location where nqudmlgen can be found. /server/bin/nqudmlgen will be appended." />
+		<property name="repository" kind="string" required="true" description="obieerpd repository." />
 		<property name="username" kind="string" required="true" description="Powercenter username." />
 		<property name="password" kind="string" required="true" password="true" description="Powercenter password." />
 	</type>
 
 
 
-	<type type="powercenter.XML" extends="udm.BaseDeployedArtifact"
-	      deployable-type="powercenter.XmlSpec"
-	      container-type="powercenter.Container"
-	      description="Deployed xml to a powercenter container">
-		<generate-deployable type="powercenter.XmlSpec" extends="udm.BaseDeployableFileArtifact"/>
-		<property name="targetPath" kind="string" required="true" description="Output targetpath" />
+	<type type="obiee.RPD" extends="udm.BaseDeployedArtifact"
+	      deployable-type="obiee.RpdSpec"
+	      container-type="obiee.Container"
+	      description="Deployed xml to a obiee container">
+		<generate-deployable type="obiee.RpdSpec" extends="udm.BaseDeployableFileArtifact"/>
+		<property name="UDMLtargetPath" kind="string" required="true" description="UDML Output target path" />
 		<property name="foldername" kind="string" required="true" description="folder name" />
-		<property name="filename" kind="string" required="true" description="file name" />
+		<property name="targetPath" kind="string" required="true" description="Output UDMLFile" />
+		<property name="Inputtextfile" kind="string" required="true" description="rpdupdate textfile" />
+		<property name="OLAP_USER" kind="string" required="true" description="Username" />
+		<property name="OLAP_DSN" kind="string" required="true" description="Username" />
+		<property name="OLAPTBO" kind="string" required="true" description="Username" />
+		<property name="OLTP_DSN" kind="string" required="true" description="Username" />
+		<property name="OLTP_USER" kind="string" required="true" description="Username" />
+		<property name="TBO" kind="string" required="true" description="Username" />
 	</type>
 
 </synthetic>
