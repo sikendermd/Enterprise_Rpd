@@ -8,9 +8,9 @@
 <rules xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns="http://www.xebialabs.com/xl-deploy/xl-rules" >
 
-    <rule name="obiee.Rpd.CREATE" scope="deployed">
+    <rule name="obiee.rpd.CREATE" scope="deployed">
         <conditions>
-            <type>OBIEE.RPD</type>
+            <type>obiee.rpd</type>
             <operation>CREATE</operation>
         </conditions>
         <steps>
@@ -18,10 +18,10 @@
                 <description>Install OBIEE Rpd</description>
                 <script>obiee/rpd_install</script>
                 <order>60</order>
+                <classpath-resources>
+                <value>obiee/rpdupdate_install.txt</value>
+            </classpath-resources>
             </os-script>
         </steps>
     </rule>
-
-
-
 </rules>
