@@ -32,6 +32,10 @@
 		<property name="OLTP_DSN" kind="string" required="true" description="Username" />
 		<property name="OLTP_USER" kind="string" required="true" description="Username" />
 		<property name="TBO" kind="string" required="true" description="Username" />
+		<property name="OLAP_PASSWORD" kind="string" required="true" description="Password" />
+		<property name="OLTP_PASSWORD_DHSIE" kind="string" required="true" description="Password" />
+		<property name="OLTP_PASSWORD" kind="string" required="true" description="Password" />
+		
 	</type>
 
 </synthetic>
