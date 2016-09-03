@@ -25,17 +25,6 @@
 		<generate-deployable type="obiee.rpdspec" extends="udm.BaseDeployableFileArtifact"/>
 		<property name="UDMLtargetPath" kind="string" required="true" description="UDML Output target path" />
 		<property name="targetPath" kind="string" required="true" description="Output UDMLFile" />
-		<property name="Inputtextfile" kind="string" required="true" description="rpdupdate textfile" />
-		<property name="OLAP_USER" kind="string" required="true" description="Username" />
-		<property name="OLAP_DSN" kind="string" required="true" description="Username" />
-		<property name="OLAPTBO" kind="string" required="true" description="Username" />
-		<property name="OLTP_DSN" kind="string" required="true" description="Username" />
-		<property name="OLTP_USER" kind="string" required="true" description="Username" />
-		<property name="TBO" kind="string" required="true" description="Username" />
-		<property name="OLAP_PASSWORD" kind="string" required="true" description="Password" />
-		<property name="OLTP_PASSWORD_DHSIE" kind="string" required="true" description="Password" />
-		<property name="OLTP_PASSWORD" kind="string" required="true" description="Password" />
-		
 	</type>
 
 </synthetic>
