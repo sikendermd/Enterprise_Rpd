@@ -6,7 +6,8 @@
 Init_Location=${1}
 ll *.rpd
 echo ${deployed.file}
-cp ${deployed.file} /tmp
+cp "${deployed.file}" /tmp
+echo ${step.uploadedArtifactPath} 
 echo "copied"
 echo ${deployed.file.name}
 Init_Location=/u01/app/oracle/product/fmw/instances/instance1/bifoundation/OracleBIApplication/coreapplication/setup
