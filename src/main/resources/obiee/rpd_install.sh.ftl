@@ -4,9 +4,11 @@
 #
 # -----------------------------------------------------------------------------
 Init_Location=${1}
-cd xld.*
-cp *.rpd /tmp/
 ll *.rpd
+echo ${deployed.file}
+cp ${deployed.file} /tmp
+echo "copied"
+echo ${deployed.file.name}
 Init_Location=/u01/app/oracle/product/fmw/instances/instance1/bifoundation/OracleBIApplication/coreapplication/setup
 cd $Init_Location
 . bi-init.sh
