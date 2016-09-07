@@ -23,7 +23,7 @@
 	      container-type="obieerpd.Container"
 	      description="Deployed xml to a obiee container">
 		<generate-deployable type="obiee.rpdspec" extends="udm.BaseDeployableFileArtifact" />
-		<property name="createScript" default="kpmg/deploy_opa" hidden="true" />
+		<property name="createScript" default="obiee/rpd_install" hidden="true" />
 		<property name="UDMLtargetPath" kind="string" required="true" description="UDML Output target path" />
 		<property name="targetPath" kind="string" required="true" description="Output UDMLFile" />
 	</type>
