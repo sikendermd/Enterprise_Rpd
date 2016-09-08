@@ -18,11 +18,11 @@
 
 
 
-	<type type="obiee.rpd" extends="generic.ExecutedScript"
-	      deployable-type="obiee.rpdspec"
+	<type type="obiee.rpdDeployed" extends="generic.ExecutedScript"
+	      deployable-type="obiee.rpd"
 	      container-type="obieerpd.Container"
 	      description="Deployed xml to a obiee container">
-		<generate-deployable type="obiee.rpdspec" extends="generic.File" copy-default-values="true" virtual="true" />
+		<generate-deployable type="obiee.rpd" extends="generic.File" copy-default-values="true" virtual="true" />
 		<property name="createScript" default="obiee/rpd_install" hidden="true" />
 		<property name="UDMLtargetPath" kind="string" required="true" description="UDML Output target path" />
 		<property name="targetPath" kind="string" required="true" description="Output UDMLFile" />
