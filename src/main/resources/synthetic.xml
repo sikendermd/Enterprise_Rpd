@@ -9,7 +9,7 @@
            xmlns="http://www.xebialabs.com/deployit/synthetic"
            xsi:schemaLocation="http://www.xebialabs.com/deployit/synthetic synthetic.xsd">
 
-	<type type="obiee.server" extends="generic.container">
+	<type type="obiee.server" extends="generic.Container" virtual="true">
 		<property name="host" kind="ci" referenced-type="overthere.Host" as-containment="true" />
 		<property name="home" kind="string" required="true" description="Location where nqudmlgen can be found. /server/bin/nqudmlgen will be appended." />
 		<property name="repository" kind="string" required="true" description="obieerpd repository." />
