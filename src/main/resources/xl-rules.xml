@@ -12,12 +12,8 @@
         <conditions>
             <type>obiee.rpd</type>
             <operation>CREATE</operation>
-            <operation>MODIFY</operation>
         </conditions>
         <steps>
-            <upload>
-                <target-path>/stage/kpmg/smohammad</target-path>
-            </upload> 
             <os-script>
                 <description>Install OBIEE Rpd</description>
                 <script>obiee/rpd_install</script>
@@ -25,7 +21,7 @@
                 <classpath-resources>
                 <value>obiee/rpdupdate_install.txt</value>
             </classpath-resources>
-          </os-script>
+            </os-script>
         </steps>
     </rule>
-</rules>
+</rules>>
