@@ -12,6 +12,7 @@
         <conditions>
             <type>obiee.rpd</type>
             <operation>CREATE</operation>
+            <operation>MODIFY</operation>
         </conditions>
         <steps>
             <upload>
