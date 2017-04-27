@@ -18,9 +18,6 @@
                 <description>Install OBIEE Rpd</description>
                 <script>obiee/rpd_install</script>
                 <order>60</order>
-                <classpath-resources>
-                <value>obiee/rpdupdate_install.txt</value>
-            </classpath-resources>
             </os-script>
         </steps>
     </rule>
