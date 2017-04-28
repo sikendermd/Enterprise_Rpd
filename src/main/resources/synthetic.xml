@@ -11,7 +11,6 @@
 
 	<type type="obieerpd.Container" extends="udm.BaseContainer">
 		<property name="host" kind="ci" referenced-type="overthere.Host" as-containment="true" />
-		<property name="initHome" kind="string" required="true" description="Location where the command run starts." />
 		<property name="home" kind="string" required="true" description="Location where nqudmlgen can be found. /server/bin/nqudmlgen will be appended." />
 		<property name="repository" kind="string" required="true" description="obieerpd repository." />
 		<property name="password" label="Password for obiee rpd Administrative user" required="true" password="true" description="obiee Server administrator password." />
