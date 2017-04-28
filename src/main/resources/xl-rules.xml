@@ -8,20 +8,20 @@
 <rules xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns="http://www.xebialabs.com/xl-deploy/xl-rules" >
 
-    <rule name="obiee.rpd.CREATE_OR_UPDATE" scope="deployed">
+    <rule name="obiee.rpd.CREATE" scope="deployed">
         <conditions>
             <type>obiee.rpd</type>
             <operation>CREATE</operation>
         </conditions>
         <steps>
             <os-script>
-                <description>Install OBIEE Rpd</description>
+                <description>Install obiee</description>
                 <script>obiee/rpd_install</script>
                 <order>60</order>
             </os-script>
         </steps>
     </rule>
-    
-    
-    
+
+
+
 </rules>
